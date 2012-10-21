@@ -6,14 +6,20 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.net.ContentHandler;
 
-public class FileParser extends ImpHandler{
+public class FileParser {
+	
+	private org.ubo.dosi.ContentHandler contentHandler ;
+	
+	public FileParser(){
+		
+		}
 	
 	
-	public void parse(File file, ImpHandler handler ) {
+	public void parse(File file, org.ubo.dosi.ContentHandler handler ) {
 		try {
 			BufferedReader buf=new BufferedReader(new FileReader(file));
 			try{
-			String ligne ;
+			String ligne =" " ;
 			while ((ligne=buf.readLine()) != null) {
 				System.out.println(ligne);
 				handler.defaultLine(ligne);
@@ -27,7 +33,9 @@ public class FileParser extends ImpHandler{
 			System.out.println("Erreur :"+e);
 		}
 		
-		
+		System.out.println("ce fichier contient" +contentHandler.getCompteur()
+				+"lignes dont"+contentHandler.getCompteurComment()+"de commentaire");
+				
 	}
 
 	
