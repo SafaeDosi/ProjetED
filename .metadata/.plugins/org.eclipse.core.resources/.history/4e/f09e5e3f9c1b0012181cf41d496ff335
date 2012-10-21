@@ -1,0 +1,13 @@
+package com.java.dosi;
+
+import java.io.File;
+
+public class Exemple {
+
+
+	public static void main(String[] args) {
+		File f=new File("resources/test.txt");
+
+	}
+
+}
