@@ -1,4 +1,4 @@
-package com.java.dosi;
+package org.ubo.dosi;
 
 import java.io.File;
 import java.util.ArrayList;

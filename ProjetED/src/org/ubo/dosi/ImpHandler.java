@@ -1,4 +1,4 @@
-package com.java.dosi;
+package org.ubo.dosi;
 
 public class ImpHandler implements ContentHandler{
 
