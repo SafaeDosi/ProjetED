@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diplomes>
+	<master>
+		<S1>
+			<parcours id="Info" name="informatique"/>
+			<parcours id="Ma" name="Mathematiques"/>
+			<parcours id="Ts" name="Techniques Statistiques"/>
+		</S1>
+	</master>
+</diplomes>
