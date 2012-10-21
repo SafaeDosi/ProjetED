@@ -17,9 +17,6 @@ public class Exemple {
 		String path="resources/master.xml";
 		XmlParseur xp=new XmlParseur(path);
 		List lp=xp.getParcoursName();
-		for (int i = 0; i < lp.size(); i++) {
-			System.out.println(lp);
-		}
 	}
 
 	public static void main(String[] args) {

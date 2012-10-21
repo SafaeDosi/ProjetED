@@ -1,7 +1,6 @@
 package com.java.dosi;
 
 import java.io.File;
-import java.util.List;
 
 public class Exemple {
 
@@ -14,12 +13,8 @@ public class Exemple {
 		fp.parse(f, ih);
 	}
 	public void ex2(){
-		String path="resources/master.xml";
-		XmlParseur xp=new XmlParseur(path);
-		List lp=xp.getParcoursName();
-		for (int i = 0; i < lp.size(); i++) {
-			System.out.println(lp);
-		}
+		XmlParseur xp=new XmlParseur("resources/master.xml");
+		xp.getParcoursName();
 	}
 
 	public static void main(String[] args) {
