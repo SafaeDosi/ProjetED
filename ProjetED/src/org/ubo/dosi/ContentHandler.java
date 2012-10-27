@@ -2,9 +2,9 @@ package org.ubo.dosi;
 
 public interface ContentHandler {
 
-	
-	public void defaultLine(String content);
-	public void commentLine(String Comment);
-	public int getCompteur();
-	public int getCompteurComment();
+	void defaultLine(String content);
+	int getCompteur();
+	void commentLine(String comment);
+	int getCompteurComment();
+
 }
